@@ -1,33 +1,34 @@
-'use client';
-import { IconType } from 'react-icons';
+import { FaMapMarkerAlt, FaClock  } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
-import ContactInformationItem from '../Sections/ContactInformationItem';
-import Heading from '../Commons/Heading';
+import Heading from "../Commons/Heading";
+import FooterContactItem from './FooterContactItem'
 
-interface ContactInformationItemProps {
-    icon: IconType;
-    content: string;
-    link?: string;
-}
-
-interface ContactInformationProps {
-    title?: string;
-    data: ContactInformationItemProps[];
-    className?: string;
-}
-
-const FooterContact = ({ data, title, className }: ContactInformationProps) => {    
+const FooterContact = () => {
+    const contactData = [
+        {
+            icon: FaMapMarkerAlt,
+            content: '4th Floor, 75A/59 Hoang Cau Street, Dong Da district, Ha Noi'
+        },
+        {
+            icon: MdEmail,
+            content: 'contact@folinas.com',
+            link: 'mailto: contact@folinas.com'
+        },
+        {
+            icon: FaClock,
+            content: '<p>Mon-Sat 7:30am-4:30pm</p><p>Sun: Close</p>'
+        },
+    ]
     return (
-        <div className={`mt-[29px] ${className&&className}`}>
-            {title && <Heading headingTag="h4" heading={title}  />}
+       <div className="mt-[29px]">
+            <Heading headingTag="h4" heading="Contact us" />
             <ul>
-                {data?.map((item, index) => {                    
-                    return (
-                        <ContactInformationItem key={index} icon={item.icon} content={item.content} link={item.link&&item.link} />
-                    )
-                })}
+                {contactData?.map((item, index) => (
+                    <FooterContactItem key={index} icon={item.icon} content={item.content} link={item.link&&item.link} />
+                ))}
             </ul>
-        </div>
+       </div> 
     )
 }
  

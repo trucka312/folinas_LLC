@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { fontBase, fontSecondary } from '@/app/libs/fonts'
 
@@ -19,7 +21,7 @@ export default function RootLayout({
 }>) {  
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${fontBase.className} leading-6 text-base`}>
+      <body className={`${fontBase.className} leading-6 text-base overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header className={fontSecondary.className} />
           <main id="page-main" className="min-h-[300px]">{children}</main>

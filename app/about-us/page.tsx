@@ -94,13 +94,6 @@ const AboutUs = () => {
       <div className="">
         <AboutInformation/>
         <TalkingNumber/>
-
-        {/* <div className="w-full my-16">
-          <a href="fousel.com" target="_blank">
-            <Image src={BannerImg} width={2000} alt="Logo" />
-          </a>
-        </div> */}
-
         <AboutGrowing/>
       </div>
     </Container>

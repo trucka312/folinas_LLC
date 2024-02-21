@@ -1,59 +1,40 @@
 "use client";
-import { FaMapMarkerAlt, FaClock } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-
 import Container from "@/app/components/Commons/Container";
-import FooterContact from "./FooterContact";
 import FooterLinks from "./FooterLinks";
+import FooterContact from "./FooterContact";
 import FooterLogo from "./FooterLogo";
 import CopyRight from "./CopyRight";
 
 const Footer = () => {
   const quickLinks = [
-    { label: "About Us", href: "/about-us" },
-    { label: "Contact Us", href: "/#" },
-    { label: "Our Service", href: "/#" },
-    { label: "Recruitment", href: "/#" },
-  ];
+    { label: 'About Us', href: '/about-us'},
+    { label: 'Contact Us', href: '/contact'},
+    { label: 'Our Service', href: '/our-services'},
+    { label: 'Recruitment', href: '/recruitment'}
+  ]
   const ourEcosystem = [
-    { label: "fousel.net", href: "https://fousel.net/" },
-    { label: "folinas.com", href: "https://folinas.com/" },
-  ];
-
-  const contactData = [
-    {
-      icon: FaMapMarkerAlt,
-      content: "4th Floor, 75A/59 Hoang Cau Street, Dong Da district, Ha Noi",
-    },
-    {
-      icon: MdEmail,
-      content: "contact@folinas.com",
-      link: "mailto: contact@folinas.com",
-    },
-    {
-      icon: FaClock,
-      content: "<p>Mon-Sat 7:30am-4:30pm</p><p>Sun: Close</p>",
-    },
-  ];
+    { label: 'fousel.net', href: 'https://fousel.net/'},
+    { label: 'folinas.com', href: 'https://folinas.com/'},
+  ]
 
   return (
-    <footer className="border-[1px]">
+    <footer className='border-t-[1px]'>
       <Container>
         <div className="flex flex-wrap pt-10 -mx-[15px]">
-          <div className="w-full md:w-[50%] lg:w-[30%]">
-            <FooterLogo />
+          <div className="px-[15px] order-1 w-full md:w-[70%] md:order-1 lg:w-[70%] lg:mb-10 xl:w-[30%] xl:order-1">
+            <FooterLogo/>
           </div>
-          <div className="w-full md:w-[50%] lg:w-[20%]">
-            <FooterLinks items={ourEcosystem} title="Our EcoSystem" />
+          <div className="px-[15px] order-3 w-full md:w-[30%] md:order-2 lg:w-[30%] lg:mb-10 xl:w-[20%] xl:order-2">
+            <FooterLinks items={ourEcosystem} title="Our EcoSystem"/>
           </div>
-          <div className="w-full md:w-[50%] lg:w-[20%]">
-            <FooterLinks items={quickLinks} title="Quick links" />
+          <div className="px-[15px] order-4 w-full md:w-[30%] md:order-4 lg:w-[30%] lg:mb-10 xl:w-[20%] xl:order-3">
+            <FooterLinks items={quickLinks} title="Quick links"/>
           </div>
-          <div className="w-full md:w-[50%] lg:w-[30%]">
-            <FooterContact data={contactData} title="Contact us" />
+          <div className="px-[15px] order-2 w-full md:w-[70%] md:order-3 lg:w-[70%] lg:mb-10 xl:w-[30%] xl:order-4">
+            <FooterContact/>
           </div>
-        </div>
-        <CopyRight />
+        </div>        
+        <CopyRight/>
       </Container>
     </footer>
   );

@@ -13,15 +13,15 @@ const BannerTop = () => {
             <Image
                 src={BannerImage}
                 alt="Logo"
-                className='max-w-full] animate-bottomOut'
+                className='h-[350px] object-cover md:h-[initial] max-w-full] animate-bottomOut'
                 width={3000}
                 height={500}
                 priority={false}
             />
             <div className='absolute top-0 right-0 bottom-0 left-0 flex items-center z-[1] text-white'>
                 <Container>
-                    <Heading headingTag='h2' heading='Welcome to Folinas' className='animate-backInDown mb-5' />
-                    <Link href='#'>Learn more <FaAnglesRight className='inline-block ml-1 text-[12px] animate-shakeNext' /></Link>
+                    <Heading headingTag='h2' heading='Welcome to Folinas' className='animate-backInDown !mb-0 md:!mb-5' />
+                    <Link href='#' className='animate-fadeInRight'>Learn more <FaAnglesRight className='inline-block ml-1 text-[12px] animate-shakeNext' /></Link>
                 </Container>
             </div>
         </div>

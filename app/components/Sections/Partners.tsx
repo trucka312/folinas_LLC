@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Slider from "react-slick";
 
 import Shopify from "@/public/images/partners/shopify.png"
 import Google from "@/public/images/partners/google.png"
@@ -11,9 +12,38 @@ import CustomCat from "@/public/images/partners/customcat.png"
 import GearLaunch from "@/public/images/partners/gearlaunch.png"
 
 import Container from "../Commons/Container";
-import SlickSlider from "../Commons/SlickSlider";
 
 const Partners = () => {
+    const settings = {
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 6000,
+        autoplaySpeed: 0,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1
+                }
+            }
+        ]
+    };
     const sliderData = [
         {
             title: 'Shopify',
@@ -47,25 +77,25 @@ const Partners = () => {
             title: 'GearLaunch',
             image: GearLaunch,
         },
-    ]
-
-    const sliderContent = sliderData.map((item, index) => (
-        <div key={index} className="">
-            <Image 
-                src={item.image}
-                alt={item.title}
-                className='mx-auto'
-                width={270}
-                height={80}
-                priority={false}
-            />
-        </div>
-    ))
+    ]    
 
     return (
-        <div className="my-20">
+        <div id="partner" className="my-20">
             <Container>
-                <SlickSlider content={sliderContent} slidesToScroll={1} slidesToShow={4} speed={6000} autoplaySpeed={0} infinite fade={false} className='w-full' />
+                <Slider {...settings}>
+                    {sliderData.map((item, index) => (
+                        <div key={index} className="">
+                            <Image 
+                                src={item.image}
+                                alt={item.title}
+                                className='mx-auto'
+                                width={270}
+                                height={80}
+                                priority={false}
+                            />
+                        </div>
+                    ))}
+                </Slider>
             </Container>
         </div>
     )

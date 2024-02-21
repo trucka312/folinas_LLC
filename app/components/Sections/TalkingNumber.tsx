@@ -101,17 +101,17 @@ const TalkingNumber = () => {
     
     return (
         <div className="mt-20 flex flex-wrap -mx-[15px]">
-            <div className="px-[15px] w-full md:w-[50%]">
+            <div className="px-[15px] w-full lg:w-[50%] order-2 lg:order-1">
                 <div className="rounded-md overflow-hidden">
                     <Image src={AboutImage} alt="Talking Number Image"/>
                 </div>
             </div>
-            <div className="px-[15px] w-full md:w-[50%]">
+            <div className="px-[15px] w-full lg:w-[50%] order-1 lg:order-2 mb-[30px] lg:mb-0">
                 <Heading headingTag="h2" heading="The numbers Folinas have achieved"/>
-                <div className="pl-10">
+                <div className="lg:pl-10">
                     {dataNumber.map((item, index) => (
                         <div key={index} className="flex flex-wrap items-end mb-10 last:mb-0 group">
-                            <span className="text-[rgb(var(--second-rgb))] text-6xl font-semibold min-w-[170px] group-hover:scale-125 transition-all duration-500">
+                            <span className="text-[rgb(var(--second-rgb))] text-4xl lg:text-6xl font-semibold min-w-[100px] lg:min-w-[170px] group-hover:scale-125 transition-all duration-500">
                                 {item.number} +
                             </span>
                             <p className="ml-6 flex-1">{item.title}</p>

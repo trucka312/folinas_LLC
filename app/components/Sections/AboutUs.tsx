@@ -22,12 +22,12 @@ const AboutUs = () => {
         }
     ]
     return (
-        <div className="flex wrap -mx-[15px] mt-[60px]">
+        <div className="flex flex-wrap -mx-[15px] mt-[60px]">
             {dataAboutUs.map((item, index) => (
-                <div key={index} className="w-[calc(100%/3)] px-[15px]">
+                <div key={index} className="w-full lg:w-[calc(100%/3)] px-[15px] mb-[30px] last:mb-0 lg:mb-0">
                     <div className="border-[1px] border-solid p-10 h-full rounded-md shadow-[0_10px_15px_-3px_rgba(0,0,0,.1),_0_4px_6px_-4px_rgba(0,0,0,.1)]">
                         <div className="text-[100px] opacity-60 text-[rgb(var(--second-rgb))] mb-5">{item.icon}</div>
-                        <Heading className="mb-5" headingTag="h3" heading={item.title} />
+                        <Heading className="!mb-5" headingTag="h3" heading={item.title} />
                         <p>{item.content}</p>
                     </div>
                 </div>

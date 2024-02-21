@@ -24,14 +24,14 @@ const AboutGrowing = () => {
     return (
         <div className="my-20">
             <div className="flex flex-wrap items-center">
-                <div className="w-full md:w-[50%] pr-12">
-                <h4 className="mt-6 text-[rgb(var(--second-rgb))] text-7xl ">
-                    <span className="text-[rgb(var(--foreground-rgb))]">Growing</span> Day by Day,
-                </h4>
-                <h5 className="mt-6 text-[rgb(var(--second-rgb))] text-7xl">
-                    <span className="text-[rgb(var(--foreground-rgb))]">Advancing</span> Step by
-                    Step.
-                </h5>
+                <div className="w-full md:w-[50%] lg:pr-12 mb-[30px] lg:mb-0">
+                    <h4 className="mt-0 lg:mt-6 text-[rgb(var(--second-rgb))] text-4xl lg:text-7xl ">
+                        <span className="text-[rgb(var(--foreground-rgb))]">Growing</span> Day by Day,
+                    </h4>
+                    <h5 className="mt-0 lg:mt-6 text-[rgb(var(--second-rgb))] text-4xl lg:text-7xl">
+                        <span className="text-[rgb(var(--foreground-rgb))]">Advancing</span> Step by
+                        Step.
+                    </h5>
                 </div>
                 <div className="w-full md:w-[50%] px-[15px]">
                     <div className="rounded-md overflow-hidden"><Image src={AboutImage} alt="About Growing" /></div>

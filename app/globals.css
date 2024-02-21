@@ -22,26 +22,20 @@ body {
   background-color: rgb(var(--background-rgb));
 }
 
-h1 {
-  font-size: 48px;
-  line-height: 1.25;
-  font-weight: 600
-}
-
-h2 {
-  font-size: 48px;
+h1, h2 {
+  font-size: 38px;
   line-height: 1.25;
   font-weight: 600
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.25;
   font-weight: 600
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.25;
   font-weight: 600
 }
@@ -79,6 +73,21 @@ body .slick-dots li.slick-active button:before {
 
 body .slick-dots li {
   margin: 0;
+}
+
+/* responsive */
+@media screen and (min-width: 768px) {
+  h1, h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
 }
 
 @layer utilities {

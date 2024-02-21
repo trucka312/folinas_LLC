@@ -1,23 +1,24 @@
 'use client';
 import Image from "next/image";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import LogoImage from "@/public/images/Logo.png";
+import Link from "next/link";
 
 const Logo = () => {
-    const router = useRouter()
     const pathname = usePathname()
     const LogoImageRender = () => {
         return (
-            <Image
-                onClick={() => router.push('/')}
-                src={LogoImage}
-                alt="Logo"
-                className="hidden md:block cursor-pointer max-h-[52px] w-auto"
-                width={1020}
-                height={536}
-                priority={false}
-            />
+            <Link href='#'>
+                <Image
+                    src={LogoImage}
+                    alt="Logo"
+                    className="cursor-pointer max-h-[52px] w-auto mx-auto"
+                    width={1020}
+                    height={536}
+                    priority={false}
+                />
+            </Link>
         )
     }
     

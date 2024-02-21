@@ -6,8 +6,8 @@ import InformationImage from "@/public/images/about/about-3.jpg";
 
 const AboutInformation = () => {
     return (
-        <div className="flex justify-between mt-20 -mx-[15px]">
-            <div className="px-[15px] w-[50%]">
+        <div className="flex flex-wrap justify-between mt-20 -mx-[15px]">
+            <div className="px-[15px] w-full lg:w-[50%] mb-[30px] lg:mb-0">
               <div>
                 <Heading headingTag="h2" heading="Information" />
 
@@ -19,10 +19,8 @@ const AboutInformation = () => {
                   <p>Our relentless dedication reflects in our ongoing efforts to be a steadfast, long-term partner, building trust and delivering excellence to our valued customers.</p>
                 </div>
               </div>
-              
-              
             </div>
-            <div className="w-[50%] px-[15px]">
+            <div className="w-full lg:w-[50%] px-[15px]">
               <div className="rounded-md overflow-hidden">
                 <Image src={InformationImage} alt="About Information" className="max-h-[400px] object-cover object-bottom"/>
               </div>

@@ -12,11 +12,9 @@ export const metadata: Metadata = {
 
 const RecruitmentPage = () => {    
     return (
-        <div>
-            <Container>
-                <Recruitment/>
-            </Container>
-        </div>
+        <Container>
+            <Recruitment/>
+        </Container>
     )
 }
  

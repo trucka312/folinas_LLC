@@ -19,7 +19,7 @@ const Breadcrumbs = ({ pathName }: BreadcrumbsProps) => {
             <Image
                 src={BreadcrumbsImage}
                 alt="Logo"
-                className='max-w-full]'
+                className='max-w-full] h-[350px] lg:h-[initial] object-cover'
                 width={3000}
                 height={900}
                 priority={false}

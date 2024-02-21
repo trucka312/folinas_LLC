@@ -33,12 +33,12 @@ const OurServices = () => {
                 <Heading headingTag="h2" heading="Our Services" className="text-center" />
                 <div className="mt-5 flex flex-wrap -mx-[15px]">
                     {servicesData.map((item, index) => (
-                        <div key={index} className="w-full md:w-[50%] px-[15px] mb-[30px]">
-                            <div className="h-full p-5 flex wrap hover:bg-[rgb(var(--second-rgb)_/5%)] rounded-md border-[1px]">
-                                <div className="mr-10 w-[80px] h-[80px] flex items-center justify-center rounded-full bg-[rgb(var(--second-rgb)_/50%)]">
+                        <div key={index} className="w-full lg:w-[50%] px-[15px] mb-[30px]">
+                            <div className="h-full p-5 flex flex-wrap hover:bg-[rgb(var(--second-rgb)_/5%)] rounded-md border-[1px]">
+                                <div className="mb-10 lg:mb-0 lg:mr-10 w-[80px] h-[80px] flex items-center justify-center rounded-full bg-[rgb(var(--second-rgb)_/50%)]">
                                     <item.icon size={40}/>
                                 </div>
-                                <div className="flex-1">
+                                <div className="w-full lg:flex-1">
                                     <Heading headingTag="h3" heading={item.title} />
                                     <div dangerouslySetInnerHTML={{__html: item.content}}></div>
                                 </div>

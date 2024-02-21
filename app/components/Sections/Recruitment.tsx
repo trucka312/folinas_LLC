@@ -45,9 +45,9 @@ const Recruitment = () => {
         }, 
     ]
     return (
-        <div className="flex flex-wrap -mx-[15px] my-20">
+        <div className="flex flex-wrap -mx-[15px] mt-10 lg:mt-20 mb-20">
             {recruitmentData.map(item => (
-                <div key={item.id} className="w-full md:w-[50%]">
+                <div key={item.id} className="w-full lg:w-[50%] px-[15px] mb-[30px] lg:mb-0">
                     <Heading headingTag="h3" heading={item.name} className="!mb-2" />
                     <ol>
                         {item.items.map((jobItem, index) => (
