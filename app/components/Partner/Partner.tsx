@@ -20,9 +20,10 @@ const Partner = () => {
     slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 4000,
+    speed: 0,
     swipeToSlide: true,
   };
+
   return (
     <>
       <p className="text-4xl font-semibold text-center">OUR PARTNER</p>
