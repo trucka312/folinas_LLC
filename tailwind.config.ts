@@ -84,6 +84,14 @@ const config: Config = {
         typeText: {
           '0%': { width: '0%' },
           '100%': { width: '100%' }
+        },
+        aitf: {
+          '0%': {
+            backgroundPosition: '0% 50%'
+          },
+          '100%': {
+            backgroundPosition: '100% 50%'
+          }
         }
       },
       animation: {
@@ -92,7 +100,11 @@ const config: Config = {
         'shakeNext': 'shakeNext 1s ease infinite',
         'fadeInDown': 'fadeInDown .5s ease',
         'fadeInRight': 'fadeInRight .3s ease',
-        'typeText': 'typeText .5s forwards'
+        'typeText': 'typeText .5s forwards',
+        'BgText': 'aitf 80s linear infinite', 
+      },
+      'text-fill-color':{
+        "transparent": "transparent"
       }
     }
   },
