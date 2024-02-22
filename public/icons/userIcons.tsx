@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Iconprops } from "@/app/contants/Iconprops";
+import { Iconprops } from "@/app/contants";
 
 const userIcons: React.FC<Iconprops> = (props: any) => {
   return (

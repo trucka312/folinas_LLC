@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Buttonprops } from "@/app/contants/Buttonprops";
+import { Buttonprops } from "@/app/contants";
 import "./style.css";
 
 const ButtonAnimationScroll: React.FC<Buttonprops> = (props: any) => {

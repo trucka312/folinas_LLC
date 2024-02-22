@@ -1,6 +1,6 @@
 "use client";
 
-import { Iconprops } from "@/app/contants/Iconprops";
+import { Iconprops } from "@/app/contants";
 
 const hourglassIcon: React.FC<Iconprops> = (props: any) => {
   return (

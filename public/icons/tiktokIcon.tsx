@@ -1,6 +1,6 @@
 "use client";
 
-import { Iconprops } from "@/app/contants/Iconprops";
+import { Iconprops } from "@/app/contants";
 
 const tiktokIcon: React.FC<Iconprops> = (props: any) => {
   return (
