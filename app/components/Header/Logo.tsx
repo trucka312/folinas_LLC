@@ -11,16 +11,8 @@ const Logo = () => {
   const LogoImageRender = () => {
     return (
       <Link href="#">
-        <div className="">
+        <div className="ml-6">
           <LoadingBgTheme />
-          <Image
-            src={LogoImage}
-            alt="Logo"
-            className="cursor-pointer max-h-[52px] w-auto mx-auto"
-            width={1020}
-            height={536}
-            priority={false}
-          />
         </div>
       </Link>
     );
