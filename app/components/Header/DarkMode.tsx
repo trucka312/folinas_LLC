@@ -1,39 +1,29 @@
-"use client";
-import * as React from "react";
-import { useTheme } from "next-themes";
-import { BsMoonStars, BsSun } from "react-icons/bs";
+'use client';
+import * as React from "react"
+import { useTheme } from "next-themes"
+import { BsMoonStars, BsSun } from "react-icons/bs"
 
-interface DarkModeProps {
-  align?: string;
+const DarkMode = () => {
+    const { theme, setTheme } = useTheme()
+    const handleChangeTheme = () => {
+        if (theme === 'light') {
+            setTheme('dark')
+        } else {
+            setTheme('light')
+        }
+    }    
+    
+    return (
+        <div className="relative inline-block align-middle">
+            <button className="relative border-[1px] p-2 rounded-md overflow-hidden bg-clip-text -webkitTextFillColor-transparent" onClick={() => handleChangeTheme()}> 
+                {theme === 'light' ?
+                    <BsMoonStars size={18} />
+                :
+                    <BsSun size={18}/>
+                }
+            </button>
+        </div>
+    )
 }
-
-const DarkMode = ({ align = "right" }: DarkModeProps) => {
-  const { setTheme } = useTheme();
-  const [pesentTheme, setPesentTheme] = React.useState("system");
-
-  React.useEffect(() => {
-    setTheme("system");
-  }, []);
-
-  return (
-    <div className="">
-      {pesentTheme === "light" ? (
-        <BsMoonStars
-          onClick={() => {
-            setPesentTheme("dark"), setTheme("dark");
-          }}
-          className="h-[1.2rem] w-[1.2rem] "
-        />
-      ) : (
-        <BsSun
-          onClick={() => {
-            setPesentTheme("light"), setTheme("light");
-          }}
-          className="h-[1.2rem] w-[1.2rem] "
-        />
-      )}
-    </div>
-  );
-};
-
+ 
 export default DarkMode;

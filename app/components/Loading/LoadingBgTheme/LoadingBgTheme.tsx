@@ -4,12 +4,11 @@ import React from "react";
 import Image from "next/image";
 
 import "./style.css";
-import LogoImage from "@/public/images/Logo.png";
+import LogoImage from "@/public/images/logo.png";
 
 const LoadingBgTheme = () => {
   return (
-    <div>
-      <strong className="loading">
+      <div className="loading">
         <span></span>
         <span></span>
         <span></span>
@@ -27,8 +26,7 @@ const LoadingBgTheme = () => {
             priority={false}
           />
         </div>
-      </strong>
-    </div>
+      </div>
   );
 };
 

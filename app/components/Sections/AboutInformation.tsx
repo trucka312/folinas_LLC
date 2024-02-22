@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import Heading from "@/app/components/Commons/Heading";
 import InformationImage from "@/public/images/about/about-3.jpg";
-import ButtonAnimation from "../Button/ButtonAnimationPress";
-import ButtonAnimated from "../Button/ButtonAnimationScroll";
 
 const AboutInformation = () => {
   return (

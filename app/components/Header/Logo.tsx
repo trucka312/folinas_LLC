@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import LogoImage from "@/public/images/Logo.png";
 import Link from "next/link";
 import LoadingBgTheme from "../Loading/LoadingBgTheme/LoadingBgTheme";
 
