@@ -84,6 +84,14 @@ const config: Config = {
         typeText: {
           '0%': { width: '0%' },
           '100%': { width: '100%' }
+        },
+        scrollLeft: {
+          '0%': {
+            transform: 'translateX(0)'
+          },
+          '100%': {
+            transform: 'translateX(-2000px)'
+          }
         }
       },
       animation: {
@@ -92,10 +100,12 @@ const config: Config = {
         'shakeNext': 'shakeNext 1s ease infinite',
         'fadeInDown': 'fadeInDown .5s ease',
         'fadeInRight': 'fadeInRight .3s ease',
-        'typeText': 'typeText .5s forwards'
+        'typeText': 'typeText .5s forwards',
+        'scrollLeft': 'scrollLeft 20s linear infinite'
       }
     }
   },
   plugins: [],
 };
 export default config;
+

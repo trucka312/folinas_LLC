@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import LogoImage from "@/public/images/Logo.png";
+import LogoImage from "@/public/images/logo.png";
 
 import Social from "../Commons/Social";
 

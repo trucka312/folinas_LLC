@@ -13,8 +13,8 @@ const ContactPage = () => {
   return (
     <div>
       <Container>
-        <ContactMap />
         <ContactMethod />
+        <ContactMap />
       </Container>
     </div>
   );

@@ -2,14 +2,7 @@
 
 import React, { useEffect } from "react";
 
-
 import Container from "../components/Commons/Container";
-import BannerImg from "@/public/images/sg-50009109-577e4b2cbb319aeb61ea1cad0abfc301.png";
-import HourglassIcon from "@/public/icons/hourglassIcon";
-import UserIcon from "@/public/icons/userIcons";
-import BuildingIcon from "@/public/icons/buildingIcon";
-import PartnerIcon from "@/public/icons/partnerIcon";
-import Heading from "../components/Commons/Heading";
 import AboutInformation from "../components/Sections/AboutInformation";
 import TalkingNumber from "../components/Sections/TalkingNumber";
 import AboutGrowing from "../components/Sections/AboutGrowing";

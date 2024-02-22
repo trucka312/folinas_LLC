@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ContactMap = () => {
     return (
-        <div className="mt-10 lg:mt-20 w-full">
+        <div className="my-20 lg:mt-20 w-full">
             <p className="pb-4 flex text-lg">
                 Visit our store: &nbsp;<Link href="fousel.com" target="_blank" className="text-[red] text-lg">fousel.net</Link>
             </p>

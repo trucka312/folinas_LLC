@@ -7,7 +7,7 @@ const ContactMethod = () => {
 
     
     return (
-        <div className="my-20 flex flex-wrap -mx-[15px]">
+        <div className="mt-10 flex flex-wrap -mx-[15px]">
             <div className="w-full lg:w-[50%] px-[15px] mb-10 lg:mb-0">
                 <Heading heading="Folinas information" headingTag="h2" className="!text-[34px]"/>
                 <ContactInformation/>
