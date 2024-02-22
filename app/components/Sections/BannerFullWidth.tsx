@@ -1,19 +1,19 @@
-import Image, { StaticImageData  } from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-import { fontSecondary } from '@/app/libs/fonts'
+import { fontSecondary } from "@/app/libs/fonts";
 
 import Heading from "../Commons/Heading";
 
 interface BannerFullWidthProps {
-    className?: string;
-    title?: string;
-    image: StaticImageData ;
-    imageWidth?: number;
-    imageHeight?: number;
-    imageAlt: string;
-    imageClassName?:string;
-    content: TrustedHTML;
-    contentClassName?: string;
+  className?: string;
+  title?: string;
+  image: StaticImageData;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageAlt: string;
+  imageClassName?: string;
+  content: TrustedHTML;
+  contentClassName?: string;
 }
 
 const BannerFullWidth = ({className, title, image, imageClassName, imageWidth, imageHeight, imageAlt, content, contentClassName}: BannerFullWidthProps) => {    

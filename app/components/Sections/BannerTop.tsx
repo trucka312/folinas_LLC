@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { FaAnglesRight } from "react-icons/fa6"
 import {useTranslations} from 'next-intl';
 
-import BannerImage from '@/public/images/banners/banner-top.jpg'
-import Image from 'next/image';
-import Container from '../Commons/Container';
-import Heading from '../Commons/Heading';
+import BannerImage from "@/public/images/banners/banner-top.jpg";
+import Image from "next/image";
+import Container from "../Commons/Container";
+import Heading from "../Commons/Heading";
 
 const BannerTop = () => {
     const t = useTranslations('Sections.BannerTop');

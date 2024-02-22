@@ -92,6 +92,14 @@ const config: Config = {
           '100%': {
             transform: 'translateX(-2000px)'
           }
+        },
+        aitf: {
+          '0%': {
+            backgroundPosition: '0% 50%'
+          },
+          '100%': {
+            backgroundPosition: '100% 50%'
+          }
         }
       },
       animation: {
@@ -101,7 +109,8 @@ const config: Config = {
         'fadeInDown': 'fadeInDown .5s ease',
         'fadeInRight': 'fadeInRight .3s ease',
         'typeText': 'typeText .5s forwards',
-        'scrollLeft': 'scrollLeft 20s linear infinite'
+        'scrollLeft': 'scrollLeft 20s linear infinite',
+        'BgText': 'aitf 80s linear infinite', 
       }
     }
   },

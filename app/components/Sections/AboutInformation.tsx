@@ -10,6 +10,7 @@ const AboutInformation = () => {
       <div className="px-[15px] w-full lg:w-[50%] mb-[30px] lg:mb-0">
         <div>
           <Heading headingTag="h2" heading="Information" />
+
           <div>
             <p>
               Folinas, a leading cross-border e-commerce company, operates
