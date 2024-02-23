@@ -1,8 +1,12 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
+
 import Container from "../components/Commons/Container";
 import Heading from "../components/Commons/Heading";
+import ButtonAnimationScroll from "../components/Button/ButtonAnimationScroll";
+import ButtonAnimationPress from "../components/Button/ButtonAnimationPress";
 
 interface PrivacyPolicyItem {
   title: string;
@@ -10,6 +14,10 @@ interface PrivacyPolicyItem {
 }
 
 const PrivacyPolicy: React.FC = () => {
+  const router = useRouter();
+  const handleBack = () => {
+    router.push("/");
+  };
   const dataPrivacyPolicy: PrivacyPolicyItem[] = [
     {
       title: "1. Personal Data Collection",
@@ -152,7 +160,7 @@ const PrivacyPolicy: React.FC = () => {
   return (
     <Container>
       <div className="mt-10">
-        <div className="">
+        <div>
           <Heading
             className="mb-5"
             headingTag="h2"
@@ -173,6 +181,9 @@ const PrivacyPolicy: React.FC = () => {
               <>{item.content}</>
             </div>
           ))}
+        </div>
+        <div className="w-full my-6 align-middle text-center">
+          <ButtonAnimationPress onClick={handleBack} text="Back to home" />
         </div>
       </div>
     </Container>
