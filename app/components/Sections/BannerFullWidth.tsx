@@ -42,17 +42,17 @@ const BannerFullWidth = ({
         />
       </div>
       <div
-        className={`absolute top-[50%] -translate-y-[50%] left-0 right-0 z-1 px-[50px] py-10 text-white ${fontSecondary.className}`}
+        className={`absolute top-[50%] -translate-y-[50%] left-0 right-0 z-1 px-[30px] md:px-[50px] py-10 text-white ${fontSecondary.className}`}
       >
         {title && (
           <Heading
             headingTag="h2"
             heading={title}
-            className="uppercase text-[20px] !mb-1 animate-fadeInDown"
+            className="uppercase text-[14px] sm:text-[18px] lg:text-[20px] !mb-1 animate-fadeInDown"
           />
         )}
         <div
-          className={`text-[30px] max-w-[700px] leading-9 ${
+          className={`text-[16px] sm:text-[20px] lg:text-[30px] max-w-[700px] sm:leading-9 ${
             contentClassName && contentClassName
           }`}
           dangerouslySetInnerHTML={{ __html: content }}

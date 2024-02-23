@@ -51,7 +51,7 @@ const MenuMobile = ({ onShow }: MenuMobileProps) => {
                 <IoMdClose size={25} onClick={() => onShow(false)} />
             </div>
             <div className="my-5 px-4 space-x-[15px]">
-                <DarkMode align="left"/>
+                <DarkMode/>
                 <MultiLanguage align="left"/>
             </div>
             <ul>

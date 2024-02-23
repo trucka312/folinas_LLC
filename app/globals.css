@@ -45,10 +45,14 @@ a:hover {
 }
 
 /* slider */
-.slick-track {
-  transition: all ease .5s;
+.slick-slider {
   margin-left: -15px;
   margin-right: -15px;
+  overflow: hidden;
+}
+
+.slick-track {
+  transition: all ease .5s;
 }
 
 .slick-track .slick-slide {

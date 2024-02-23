@@ -92,6 +92,14 @@ const config: Config = {
           '100%': {
             backgroundPosition: '100% 50%'
           }
+        },
+        scrollLeft: {
+          '0%': {
+            transform: 'translateX(0)'
+          },
+          '100%': {
+            transform: 'translateX(-2000px)'
+          }
         }
       },
       animation: {
@@ -101,6 +109,7 @@ const config: Config = {
         'fadeInDown': 'fadeInDown .5s ease',
         'fadeInRight': 'fadeInRight .3s ease',
         'typeText': 'typeText .5s forwards',
+        'scrollLeft': 'scrollLeft 20s linear infinite',
         'BgText': 'aitf 80s linear infinite', 
       },
       'text-fill-color':{
@@ -111,3 +120,4 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
