@@ -1,11 +1,10 @@
 "use client";
-
 import React, { useEffect } from "react";
 
-import Container from "../components/Commons/Container";
-import AboutInformation from "../components/Sections/AboutInformation";
-import TalkingNumber from "../components/Sections/TalkingNumber";
-import AboutGrowing from "../components/Sections/AboutGrowing";
+import Container from "../../components/Commons/Container";
+import AboutInformation from "../../components/Sections/AboutInformation";
+import TalkingNumber from "../../components/Sections/TalkingNumber";
+import AboutGrowing from "../../components/Sections/AboutGrowing";
 
 const AboutUs = () => {
   const [staff, setStaff] = React.useState(0);

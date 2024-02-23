@@ -30,7 +30,9 @@ const Social = () => {
     return (
         <ul id="social-list" className="mt-10">
             {socialData.map((item, index) => (
-                <li key={index} className="inline-block mx-[15px] first:ml-0 last:mr-0"><SocialItem icon={item.icon} href={item.href} className="opacity-60 hover:opacity-100" /></li>
+                <li key={index} className="inline-block mx-[15px] first:ml-0 last:mr-0">
+                    <SocialItem icon={item.icon} href={item.href} className="opacity-60 hover:opacity-100" />
+                </li>
             ))}
         </ul>
     )

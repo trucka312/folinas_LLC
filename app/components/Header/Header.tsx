@@ -9,6 +9,7 @@ import Logo from "./Logo";
 import MainMenu from "./MainMenu";
 import DarkMode from "./DarkMode";
 import MenuMobile from './MenuMobile';
+import MultiLanguage from './MultiLanguage';
 
 interface HeaderProp {
     className?: string;
@@ -55,12 +56,13 @@ const Header = ({className}: HeaderProp) => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [headerRef, headerHeight]);
-    
+    const pathnameIgnore = ['', 'en', 'vi']
+    const breadcrumbs = pathname.split('/').filter(item => !pathnameIgnore.includes(item));    
 
     return (
         <header className={className}>
-            {pathname === '/' && <BannerTop />}
-            {pathname !== '/' && <Breadcrumbs pathName={pathname} />}            
+            {breadcrumbs.length === 0 && <BannerTop />}
+            {breadcrumbs.length !== 0 && <Breadcrumbs breadcrumbs={breadcrumbs} />}
             <div ref={headerRef} id='header' className={`${(isScrolledUp) ? 'fixed animate-fadeInDown bg-white text-black shadow-[6px_0_15px_2px_hsla(220,9%,46%,.251)]' : 'absolute bg-[linear-gradient(180deg,rgb(0_0_0/77%),rgb(0_0_0/8%))] text-white'} top-0 left-0 right-0 z-[2] transition-all py-1 md:py-5`}>
                 <Container>
                     <div className="flex flex-wrap items-center justify-center md:justify-between">
@@ -70,9 +72,10 @@ const Header = ({className}: HeaderProp) => {
                             <span className='w-[1.2rem] h-[1px] bg-white inline-block absolute bottom-[10px] left-[5px]'></span>
                         </div>
                         <div className='flex-1 md:flex-[initial] text-center'><Logo/></div>
-                        <div className="hidden md:block">
+                        <div className="hidden md:block space-x-4">
                             <MainMenu/>
                             <DarkMode/>
+                            <MultiLanguage/>
                         </div>
                         <div className={`block md:hidden fixed top-0 right-0 bottom-0 left-0 transition-all duration-400 ${isShowMenuMobile ? 'translate-x-0 opacity-1' : '-translate-x-[100%] opacity-0'}`}>
                             <MenuMobile onShow={handleCloseMenuMobile}/>

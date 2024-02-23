@@ -2,9 +2,8 @@
 import * as React from "react"
 import { useRouter } from "next/navigation";
 import { IoMdClose } from "react-icons/io";
+import Link from "next/link";
 
-
-import MenuItem from "@/app/components/Header/MenuItem"
 import Heading from "../Commons/Heading";
 import DarkMode from "./DarkMode";
 import MultiLanguage from "./MultiLanguage";
@@ -61,7 +60,9 @@ const MenuMobile = ({ onShow }: MenuMobileProps) => {
             <ul>
                 {menuData.map((item, index) => (
                     <li key={index} className="">
-                        <MenuItem onClick={() => handleClick(`${item.link}`)} label={item.label}/>
+                        <Link href={item.link} className="px-4 py-3 transition font-semibold cursor-pointer hover:text-[rgb(var(--second-rgb))]">
+                            {item.label}
+                        </Link>
                     </li>
                 ))}
             </ul>

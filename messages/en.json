@@ -1,0 +1,26 @@
+{
+    "HomePage": {
+        "metaTitle": "Home - Folinas LLC",
+        "metaDescription": "Our team takes immense pride in our capacity to transform concepts into distinct and polished designs."
+    },
+    "NotFound": {
+        "metaTitle": "Not Found - Folinas LLC",
+        "metaDescription": "Our team takes immense pride in our capacity to transform concepts into distinct and polished designs.",
+        "pageTitle": "Oops...That link is broken."
+    },
+    "Sections": {
+        "Menu": {
+            "item_1": "Home",
+            "item_2": "About Us",
+            "item_3": "Our Services",
+            "item_4": "Contact Us",
+            "item_5": "Recruitment",
+            "item_6": "Blog"
+        },
+        "BannerTop": {
+            "title": "Welcome to Folinas",
+            "link": "Learn more"
+        }
+
+    }
+}

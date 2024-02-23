@@ -1,49 +1,45 @@
 'use client';
 import * as React from "react"
-import { useRouter } from "next/navigation";
-
-
-import MenuItem from "@/app/components/Header/MenuItem"
+import { useTranslations } from "next-intl";
+import Link from "next/link"
 
 const MainMenu = () => {
-    const router = useRouter()
+    const t = useTranslations('Sections.Menu')
     const menuData = [
         {
-            link: "/",
-            label: 'Home'
+            link: {pathname: "/"},
+            label: t('item_1')
         },
         {
-            link: "/about-us",
-            label: 'About Us'
+            link: {pathname: "/about-us"},
+            label: t('item_2')
         },
         {
-            link: "/our-services",
-            label: 'Our Services'
+            link: {pathname: "/our-services"},
+            label: t('item_3')
         },
         {
-            link: "/contact",
-            label: 'Contact Us'
+            link: {pathname: "/contact"},
+            label: t('item_4')
         },
         {
-            link: "/recruitment",
-            label: 'Recruitment'
+            link: {pathname: "/recruitment"},
+            label: t('item_5')
         },
         {
-            link: "/blog",
-            label: "Blogs"
+            link: {pathname: "/blog"},
+            label: t('item_6')
         }
     ]
-
-    const handleClick = (link: string) => {
-        router.push(link)
-    }
 
     return (
         <nav id="nav-main" className="inline-block align-middle">
             <ul>
                 {menuData.map((item, index) => (
                     <li key={index} className="inline-block align-middle">
-                        <MenuItem onClick={() => handleClick(`${item.link}`)} label={item.label}/>
+                        <Link href={item.link} className="px-4 py-3 transition font-semibold cursor-pointer hover:text-[rgb(var(--second-rgb))]">
+                            {item.label}
+                        </Link>
                     </li>
                 ))}
             </ul>
