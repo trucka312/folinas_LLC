@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 
 import Container from "../components/Commons/Container";
 import Heading from "../components/Commons/Heading";
-import ButtonAnimationScroll from "../components/Button/ButtonAnimationScroll";
 import ButtonAnimationPress from "../components/Button/ButtonAnimationPress";
 
 interface PrivacyPolicyItem {

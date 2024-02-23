@@ -7,7 +7,7 @@ import "./style.css";
 
 const ButtonAnimationScroll: React.FC<Buttonprops> = (props: any) => {
   return (
-    <button className="custom-btn btn-16 " onClick={props?.onClick}>
+    <button className="custom-btn btn-16 " onClick={props?.onClick} {...props}>
       <span>{props?.text ? props?.text : "Click me!"}</span>
     </button>
   );
