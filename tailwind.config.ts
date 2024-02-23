@@ -85,6 +85,14 @@ const config: Config = {
           '0%': { width: '0%' },
           '100%': { width: '100%' }
         },
+        aitf: {
+          '0%': {
+            backgroundPosition: '0% 50%'
+          },
+          '100%': {
+            backgroundPosition: '100% 50%'
+          }
+        },
         scrollLeft: {
           '0%': {
             transform: 'translateX(0)'
@@ -101,7 +109,11 @@ const config: Config = {
         'fadeInDown': 'fadeInDown .5s ease',
         'fadeInRight': 'fadeInRight .3s ease',
         'typeText': 'typeText .5s forwards',
-        'scrollLeft': 'scrollLeft 20s linear infinite'
+        'scrollLeft': 'scrollLeft 20s linear infinite',
+        'BgText': 'aitf 80s linear infinite', 
+      },
+      'text-fill-color':{
+        "transparent": "transparent"
       }
     }
   },
