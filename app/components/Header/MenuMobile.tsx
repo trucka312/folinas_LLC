@@ -36,6 +36,10 @@ const MenuMobile = ({ onShow }: MenuMobileProps) => {
         {
             link: "/recruitment",
             label: 'Recruitment'
+        },
+        {
+            link: "/blog",
+            label: "Blogs"
         }
     ]
 

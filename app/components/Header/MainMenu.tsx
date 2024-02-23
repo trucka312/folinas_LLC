@@ -7,8 +7,6 @@ import MenuItem from "@/app/components/Header/MenuItem"
 
 const MainMenu = () => {
     const router = useRouter()
-  
-
     const menuData = [
         {
             link: "/",
@@ -29,6 +27,10 @@ const MainMenu = () => {
         {
             link: "/recruitment",
             label: 'Recruitment'
+        },
+        {
+            link: "/blog",
+            label: "Blogs"
         }
     ]
 
