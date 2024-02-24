@@ -1,14 +1,15 @@
 import Link from "next/link";
 import Heading from "../Commons/Heading";
+import { useRouter } from "next/navigation";
 
 interface FooterLinkItemProps {
-    label: string;
-    href: string;
+  label: string;
+  href: string;
 }
 
 interface FooterLinksProps {
-    items: FooterLinkItemProps[];
-    title?: string;
+  items: FooterLinkItemProps[];
+  title?: string;
 }
 
 const FooterLinks = ({items, title}: FooterLinksProps) => {

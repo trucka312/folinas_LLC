@@ -24,6 +24,7 @@ const Footer = () => {
           <div className="px-[15px] order-1 w-full md:w-[70%] md:order-1 lg:w-[70%] lg:mb-10 xl:w-[30%] xl:order-1">
             <FooterLogo />
           </div>
+
           <div className="px-[15px] order-3 w-full md:w-[30%] md:order-2 lg:w-[30%] lg:mb-10 xl:w-[20%] xl:order-2">
             <FooterLinks items={ourEcosystem} title="Our EcoSystem" />
           </div>
