@@ -3,15 +3,15 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import Link from "next/link";
-import LoadingBgTheme from "../Loading/LoadingBgTheme/LoadingBgTheme";
+import AnimatedLogo from "../AnimationCpn/AnimatedBgTheme/AnimatedBgThemee";
 
 const Logo = () => {
   const pathname = usePathname();
   const LogoImageRender = () => {
     return (
       <Link href="#">
-        <div className="ml-6">
-          <LoadingBgTheme />
+        <div className="ml-[20px]">
+          <AnimatedLogo />
         </div>
       </Link>
     );
