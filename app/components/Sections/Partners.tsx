@@ -13,6 +13,7 @@ import GearLaunch from "@/public/images/partners/gearlaunch.png"
 import Esty from "@/public/images/partners/esty.png"
 import Amazon from "@/public/images/partners/amazon.png"
 import Ebay from "@/public/images/partners/ebay.png"
+import Flashship from "@/public/images/partners/flashship.png"
 
 import Container from "../Commons/Container";
 
@@ -92,21 +93,25 @@ const Partners = () => {
             title: 'Ebay',
             image: Ebay,
         },
+        {
+            title: 'Flashship',
+            image: Flashship,
+        },
     ]    
 
     return (
         <div id="partner" className="my-20">
             <Container>
-                <div className="ư-full overflow-hidden">
-                    <div className="w-full flex items-center gap-[30px] animate-scrollLeft">
+                <div className="w-full overflow-hidden">
+                    <div className="w-[4000px] flex items-center gap-[100px] animate-scrollLeft">
                         {sliderData.map((item, index) => (
-                            <div key={index} className="">
+                            <div key={index} className="flex items-center w-[250px] justify-center">
                                 <Image 
                                     src={item.image}
                                     alt={item.title}
-                                    className='mx-auto max-w-[270px]'
-                                    width={270}
-                                    height={80}
+                                    className='mx-auto max-w-[142px]'
+                                    width={142}
+                                    height={41}
                                     priority={false}
                                 />
                             </div>

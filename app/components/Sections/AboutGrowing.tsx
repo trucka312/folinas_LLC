@@ -87,13 +87,11 @@ const AboutGrowing = () => {
                         style={{ justifyContent: `${justifyItem}`}}
                     >
                         {item.images.map((imageItem, imageIndex) => {
-                            let justifyPosition;
+                            let justifyPosition = 'end';
                             if (imageIndex % 3 === 0) {
                                 justifyPosition = 'start';
                             } else if (imageIndex % 3 === 1) {
                                 justifyPosition = 'center';
-                            } else {
-                                justifyPosition = 'end'
                             }
                             return (
                                 <div key={index} 
