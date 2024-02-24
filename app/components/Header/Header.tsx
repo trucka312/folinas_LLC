@@ -10,6 +10,7 @@ import MainMenu from "./MainMenu";
 import DarkMode from "./DarkMode";
 import MenuMobile from './MenuMobile';
 import MultiLanguage from './MultiLanguage';
+import Loading from '../Loading/Loading/Loading';
 
 interface HeaderProp {
     className?: string;
@@ -61,17 +62,16 @@ const Header = ({className}: HeaderProp) => {
 
     return (
         <header className={className}>
-            {breadcrumbs.length === 0 && <BannerTop />}
-            {breadcrumbs.length !== 0 && <Breadcrumbs breadcrumbs={breadcrumbs} />}
-            <div ref={headerRef} id='header' className={`${(isScrolledUp) ? 'fixed animate-fadeInDown bg-white text-black shadow-[6px_0_15px_2px_hsla(220,9%,46%,.251)]' : 'absolute bg-[linear-gradient(180deg,rgb(0_0_0/77%),rgb(0_0_0/8%))] text-white'} top-0 left-0 right-0 z-[2] transition-all py-1 md:py-5`}>
+            {breadcrumbs.length === 0 ? <BannerTop /> : <Breadcrumbs breadcrumbs={breadcrumbs} />}
+            <div ref={headerRef} id='header' className={`${(isScrolledUp) ? 'fixed animate-fadeInDown bg-white text-black shadow-[6px_0_15px_2px_hsla(220,9%,46%,.251)]' : 'absolute bg-[linear-gradient(180deg,rgb(0_0_0/77%),rgb(0_0_0/8%))] text-white'} top-0 left-0 right-0 z-[2] transition-all py-5`}>
                 <Container>
                     <div className="flex flex-wrap items-center justify-center md:justify-between">
-                        <div className='relative w-[37px] h-[37px] border-[1px] rounded-md inline-block cursor-pointer md:hidden' onClick={() => handleOpenMenuMobile()}>
+                        <button className='relative w-[37px] h-[37px] border-[1px] rounded-md inline-block cursor-pointer md:hidden' onClick={() => handleOpenMenuMobile()}>
                             <span className='w-[1.4rem] h-[1px] bg-white inline-block absolute top-[10px] left-[5px]'></span>
                             <span className='w-[0.9rem] h-[1px] bg-white inline-block absolute top-[50%] left-[5px] -translate-y-[50%]'></span>
                             <span className='w-[1.2rem] h-[1px] bg-white inline-block absolute bottom-[10px] left-[5px]'></span>
-                        </div>
-                        <div className='flex-1 md:flex-[initial] text-center'><Logo/></div>
+                        </button>
+                        <div className='flex-1 md:flex-[initial] flex md:block justify-center text-center'><Logo pathname={breadcrumbs} /></div>
                         <div className="hidden md:block space-x-4">
                             <MainMenu/>
                             <DarkMode/>

@@ -1,6 +1,5 @@
 'use client';
 import * as React from "react"
-import { useRouter } from "next/navigation";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
@@ -13,8 +12,6 @@ interface MenuMobileProps {
 }
 
 const MenuMobile = ({ onShow }: MenuMobileProps) => {
-    const router = useRouter()
-
     const menuData = [
         {
             link: "/",
@@ -42,11 +39,6 @@ const MenuMobile = ({ onShow }: MenuMobileProps) => {
         }
     ]
 
-    const handleClick = (link: string) => {
-        router.push(link)
-        onShow(false)
-    }
-
     return (
         <nav id="nav-mobile" className="h-full bg-[rgb(var(--background-rgb))] text-[rgb(var(--foreground-rgb))]">
             <div className="flex flex-wrap items-center p-3 bg-[rgb(var(--btn-bg))] text-[rgb(var(--btn-text))] z-[999]">
@@ -60,7 +52,10 @@ const MenuMobile = ({ onShow }: MenuMobileProps) => {
             <ul>
                 {menuData.map((item, index) => (
                     <li key={index} className="">
-                        <Link href={item.link} className="px-4 py-3 transition font-semibold cursor-pointer hover:text-[rgb(var(--second-rgb))]">
+                        <Link href={item.link} 
+                            className="px-4 py-3 transition font-semibold cursor-pointer hover:text-[rgb(var(--second-rgb))]"
+                            onClick={() => onShow(false)}
+                        >
                             {item.label}
                         </Link>
                     </li>

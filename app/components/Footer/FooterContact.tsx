@@ -17,7 +17,7 @@ const FooterContact = () => {
         },
         {
             icon: FaClock,
-            content: '<p>Mon-Sat 7:30am-4:30pm</p><p>Sun: Close</p>'
+            content: '<span>Mon-Sat 7:30am-4:30pm</span><span>Sun: Close</span>'
         },
     ]
     return (
@@ -25,16 +25,16 @@ const FooterContact = () => {
             <Heading headingTag="h4" heading="Contact us" />
             <ul>
                 {contactData?.map((item, index) => (
-                    <div key={index} className={`flex mb-2 last:mb-0`}>
+                    <li key={index} className={`flex mb-2 last:mb-0`}>
                         <span className="mr-3 opacity-60"><item.icon size={20} /></span>
                         {item.link ?
                             <Link href={item.link} className="flex-1 inline-block">
                                 <span dangerouslySetInnerHTML={{__html: item.content }}></span>
                             </Link>
                         :
-                            <div className="flex-1" dangerouslySetInnerHTML={{__html: item.content }}></div>
+                            <p className="flex-1 *:block" dangerouslySetInnerHTML={{__html: item.content }}></p>
                         }
-                    </div>
+                    </li>
                 ))}
             </ul>
        </div> 

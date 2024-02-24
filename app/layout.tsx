@@ -6,7 +6,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <body className='leading-6 text-base overflow-x-hidden'>
-          <main id="page-main" className="min-h-[300px]">{children}</main>
+        {children}
       </body>
     </html>
   );

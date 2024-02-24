@@ -14,7 +14,7 @@ const DarkMode = () => {
     }    
     
     return (
-        <div className="relative inline-block align-middle">
+        <div className="inline-block align-middle">
             <button className="relative border-[1px] p-2 rounded-md overflow-hidden bg-clip-text -webkitTextFillColor-transparent" onClick={() => handleChangeTheme()}> 
                 {theme === 'light' ?
                     <BsMoonStars size={18} />

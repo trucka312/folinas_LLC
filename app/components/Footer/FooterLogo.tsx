@@ -21,7 +21,7 @@ const FooterLogo = () => {
         <p className="mb-5">If you have any question, please contact us at:</p>
         <Link
           title="Hotline"
-          href={`tel: 096 446 3304`}
+          href={`tel:0964463304`}
           className="text-[35px] font-semibold text-[rgba(var(--second-rgb))]"
         >
           (+84) 096 446 3304
