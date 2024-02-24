@@ -1,10 +1,10 @@
 "use client";
-import LoadingBgTheme from "../Loading/LoadingBgTheme/LoadingBgTheme";
+import AnimatedLogo from "@/app/components/AnimationCpn/AnimatedBgTheme/AnimatedBgThemee";
 
 const Logo = ({ pathname }: { pathname: string[];}) => {
   return (
     <>
-      {pathname.length === 0 ? <h1><LoadingBgTheme /></h1> : <LoadingBgTheme />}
+      {pathname.length === 0 ? <h1><AnimatedLogo /></h1> : <AnimatedLogo />}
     </>
   );
 };

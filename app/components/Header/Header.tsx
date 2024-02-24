@@ -10,7 +10,6 @@ import MainMenu from "./MainMenu";
 import DarkMode from "./DarkMode";
 import MenuMobile from './MenuMobile';
 import MultiLanguage from './MultiLanguage';
-import Loading from '../Loading/Loading/Loading';
 
 interface HeaderProp {
     className?: string;
