@@ -4,6 +4,7 @@ import FooterLinks from "./FooterLinks";
 import FooterContact from "./FooterContact";
 import FooterLogo from "./FooterLogo";
 import CopyRight from "./CopyRight";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
   const quickLinks = [
@@ -16,6 +17,8 @@ const Footer = () => {
     { label: "fousel.net", href: "https://fousel.net/" },
     { label: "folinas.com", href: "https://folinas.com/" },
   ];
+
+  const router = useRouter();
 
   return (
     <Container>
@@ -33,6 +36,16 @@ const Footer = () => {
           </div>
           <div className="px-[15px] order-2 w-full md:w-[70%] md:order-3 lg:w-[70%] lg:mb-10 xl:w-[30%] xl:order-4">
             <FooterContact />
+          </div>
+          <div className="block md:hidden order-5 pl-4 pt-2">
+            <p
+              onClick={() => {
+                router.push("/policy");
+              }}
+              className="cursor-pointer underline "
+            >
+              Privacy Policy
+            </p>
           </div>
         </div>
         <CopyRight />

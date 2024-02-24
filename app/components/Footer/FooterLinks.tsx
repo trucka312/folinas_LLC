@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Heading from "../Commons/Heading";
-import { useRouter } from "next/navigation";
 
 interface FooterLinkItemProps {
   label: string;
