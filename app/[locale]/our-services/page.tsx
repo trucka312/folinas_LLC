@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
-import Container from '../components/Commons/Container';
-import IntroductionServices from '../components/Sections/IntroductionServices';
-import OurServices from '../components/Sections/OurServices';
+import Container from '../../components/Commons/Container';
+import IntroductionServices from '../../components/Sections/IntroductionServices';
+import OurServices from '../../components/Sections/OurServices';
 
 export const metadata: Metadata = {
     title: 'Our Service - Folinas LLC',

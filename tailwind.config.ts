@@ -85,20 +85,20 @@ const config: Config = {
           '0%': { width: '0%' },
           '100%': { width: '100%' }
         },
-        aitf: {
-          '0%': {
-            backgroundPosition: '0% 50%'
-          },
-          '100%': {
-            backgroundPosition: '100% 50%'
-          }
-        },
         scrollLeft: {
           '0%': {
             transform: 'translateX(0)'
           },
           '100%': {
             transform: 'translateX(-2000px)'
+          }
+        },
+        aitf: {
+          '0%': {
+            backgroundPosition: '0% 50%'
+          },
+          '100%': {
+            backgroundPosition: '100% 50%'
           }
         }
       },
@@ -111,9 +111,6 @@ const config: Config = {
         'typeText': 'typeText .5s forwards',
         'scrollLeft': 'scrollLeft 20s linear infinite',
         'BgText': 'aitf 80s linear infinite', 
-      },
-      'text-fill-color':{
-        "transparent": "transparent"
       }
     }
   },
