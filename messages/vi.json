@@ -1,0 +1,26 @@
+{
+    "HomePage": {
+        "metaTitle": "Trang chủ - Folinas LLC",
+        "metaDescription": "Chúng tôi vô cùng tự hào về khả năng biến các ý tưởng thành những thiết kế khác biệt và bóng bẩy."
+    },
+    "NotFound": {
+        "metaTitle": "Not Found - Folinas LLC",
+        "metaDescription": "Our team takes immense pride in our capacity to transform concepts into distinct and polished designs.",
+        "pageTitle": "Rất tiếc...Liên kết đó bị hỏng."
+    },
+    "Sections": {
+        "Menu": {
+            "item_1": "Trang chủ",
+            "item_2": "Về chúng tôi",
+            "item_3": "Dịch vụ",
+            "item_4": "Liên hệ",
+            "item_5": "Tuyển dụng",
+            "item_6": "Tin tức"
+        },
+        "BannerTop": {
+            "title": "Xin chào, chúng tôi là Folinas",
+            "link": "Tìm hiểu thêm"
+        }
+
+    }
+}

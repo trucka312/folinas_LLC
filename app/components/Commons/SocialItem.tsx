@@ -10,7 +10,7 @@ interface SocialProps {
 
 const SocialItem = ({ icon: Icon, label, href, className }: SocialProps) => {
     return (
-        <Link href={href} className={className&&className}>
+        <Link href={href} className={className&&className} target="_blank">
             <Icon size={20} />
             {label && <span className="ml-3">{label}</span> }
         </Link>

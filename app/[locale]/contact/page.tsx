@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import Container from "../components/Commons/Container";
-import ContactMap from "../components/Sections/ContactMap";
-import ContactMethod from "../components/Sections/ContactMethod";
+import Container from "../../components/Commons/Container";
+import ContactMap from "../../components/Sections/ContactMap";
+import ContactMethod from "../../components/Sections/ContactMethod";
 
 export const metadata: Metadata = {
   title: "Contact - Folinas LLC",

@@ -13,4 +13,5 @@ export interface Buttonprops {
     text?: string;
     onClick?: any;
     size?: any;
+    type?: string;
 }

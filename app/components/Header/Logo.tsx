@@ -1,30 +1,16 @@
 "use client";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
+import AnimatedLogo from "@/app/components/AnimationCpn/AnimatedBgTheme/AnimatedBgThemee";
 
-import Link from "next/link";
-import LoadingBgTheme from "../Loading/LoadingBgTheme/LoadingBgTheme";
-
-const Logo = () => {
-  const pathname = usePathname();
-  const LogoImageRender = () => {
-    return (
-      <Link href="#">
-        <div className="ml-6">
-          <LoadingBgTheme />
-        </div>
-      </Link>
-    );
-  };
-
+const Logo = ({ pathname }: { pathname: string[] }) => {
   return (
     <>
-      {pathname === "/" && (
+      {pathname.length === 0 ? (
         <h1>
-          <LogoImageRender />{" "}
+          <AnimatedLogo />
         </h1>
+      ) : (
+        <AnimatedLogo />
       )}
-      {pathname !== "/" && <LogoImageRender />}
     </>
   );
 };
