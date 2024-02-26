@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import * as React from "react";
+
 import Image from "next/image";
 
 import AboutImage from "@/public/images/about/about-5.jpg";
@@ -10,7 +10,6 @@ import AboutImage4 from "@/public/images/about/about-8.jpg";
 import Heading from "../Commons/Heading";
 
 const AboutGrowing = () => {
-  const [justifyItem, setJustifyItem] = React.useState("start");
   const [justifyItem, setJustifyItem] = React.useState("start");
   const aboutImageData = [
     {

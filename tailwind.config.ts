@@ -111,7 +111,11 @@ const config: Config = {
         'typeText': 'typeText .5s forwards',
         'scrollLeft': 'scrollLeft 20s linear infinite',
         'BgText': 'aitf 80s linear infinite', 
+      },
+      textColor: {
+        'text-transparent': 'text-transparent'
       }
+
     }
   },
   plugins: [],

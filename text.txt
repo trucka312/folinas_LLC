@@ -1,0 +1,10 @@
+git add .
+git commit -m "PhucTD feature "
+
+git push
+
+git merge master 
+git checkout PhucTD
+git merge PhucTD 
+
+git pull origin master  
