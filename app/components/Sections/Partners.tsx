@@ -6,14 +6,13 @@ import Shopify from "@/public/images/partners/shopify.png";
 import Google from "@/public/images/partners/google.png";
 import TikTok from "@/public/images/partners/tiktok.png";
 import Facebook from "@/public/images/partners/facebook.png";
-import Gearment from "@/public/images/partners/gearment.png";
+import Gearment from "@/public/images/partners/Dearment.png";
 import Teechip from "@/public/images/partners/teechip.png";
 import CustomCat from "@/public/images/partners/customcat.png";
 import GearLaunch from "@/public/images/partners/gearlaunch.png";
-import Esty from "@/public/images/partners/esty.png";
-import Amazon from "@/public/images/partners/amazon.png";
-import Ebay from "@/public/images/partners/ebay.png";
-import Flashship from "@/public/images/partners/flashship.png";
+// import Esty from "@/public/images/partners/esty.png";
+// import Ebay from "@/public/images/partners/ebay.png";
+// import Flashship from "@/public/images/partners/flashship.png";
 
 import Container from "../Commons/Container";
 
@@ -81,22 +80,22 @@ const Partners = () => {
       title: "GearLaunch",
       image: GearLaunch,
     },
-    {
-      title: "Esty",
-      image: Esty,
-    },
-    {
-      title: "Amazon",
-      image: Amazon,
-    },
-    {
-      title: "Ebay",
-      image: Ebay,
-    },
-    {
-      title: "Flashship",
-      image: Flashship,
-    },
+    // {
+    //   title: "Esty",
+    //   image: Esty,
+    // },
+    // {
+    //   title: "Amazon",
+    //   image: Amazon,
+    // },
+    // {
+    //   title: "Ebay",
+    //   image: Ebay,
+    // },
+    // {
+    //   title: "Flashship",
+    //   image: Flashship,
+    // },
   ];
 
   return (
