@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Slider from "react-slick";
 
 import Shopify from "@/public/images/partners/shopify.png";
 import Google from "@/public/images/partners/google.png";
