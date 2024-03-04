@@ -14,7 +14,7 @@ const nextConfig = {
       "res.cloudinary.com",
     ],
   },
-  // output: 'export',
+  output: 'export',
 };
 
 module.exports = withNextIntl(nextConfig);
