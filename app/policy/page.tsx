@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { useRouter } from "next/navigation";
 
@@ -9,7 +7,7 @@ import ButtonAnimationPress from "../components/Button/ButtonAnimationPress";
 
 interface PrivacyPolicyItem {
   title: string;
-  content: any;
+  content: React.ReactNode;
 }
 
 const PrivacyPolicy: React.FC = () => {
@@ -17,65 +15,63 @@ const PrivacyPolicy: React.FC = () => {
   const handleBack = () => {
     router.push("/");
   };
+
   const dataPrivacyPolicy: PrivacyPolicyItem[] = [
     {
       title: "1. Personal Data Collection",
       content: (
-        <p className="mb-4">
-          In general, no registration is required to access any information on
-          our website. However, personal data may be collected from you
-          voluntarily for some particular purposes or services. The data may
-          include the following categories:
-          <br />
+        <div className="mb-4">
+          <h3>
+            In general, no registration is required to access any information on
+            our website. However, personal data may be collected from you
+            voluntarily for some particular purposes or services. The data may
+            include the following categories:
+          </h3>
           <div className="ml-4">
-            (1) Personal Information
-            <br />
-            Your name, Email, Phone number, Company Name, Website
+            <p>Personal Information</p>
+            <p>Your name, Email, Phone number, Company Name, Website</p>
           </div>
-          <br />
           <div className="ml-4">
-            (2) Project Information
-            <br />
-            Information related to your service requirement (for example, your
-            project objective, challenge, budget, and timeline).
+            <p> Project Information</p>
+            <p>
+              Information related to your service requirement (for example, your
+              project objective, challenge, budget, and timeline).
+            </p>
           </div>
-        </p>
+        </div>
       ),
     },
     {
       title: "2. Use of Personal Information",
       content: (
-        <p className="mb-4">
-          We may use your data for the following purposes:
-          <br />
+        <div className="mb-4">
+          <h3>We may use your data for the following purposes:</h3>
+          <ul className="ml-4">
+            <li>To provide our services to you;</li>
+            <li>To respond to any of your inquiries;</li>
+            <li>For general marketing purposes;</li>
+            <li>For general market research;</li>
+            <li>
+              For registration or enrollment of events, and campaigns organized
+              by us or our partners ;
+            </li>
+            <li>To comply with regulations in applicable laws.</li>
+          </ul>
+          <p>
+            The basis for our collection and use of your data are as follows:
+          </p>
           <div className="ml-4">
-            -To provide our services to you;
-            <br />
-            -To respond to any of your inquiries;
-            <br />
-            -For general marketing purposes;
-            <br />
-            -For general market research;
-            <br />
-            -For registration or enrollment of events, and campaigns organized
-            by us or our partners ;
-            <br />
-            -To comply with regulations in applicable laws.
+            <h3> Consent</h3>
+            <p>
+              We collect, store and process your personal information based on
+              your consent. In addition, Folinas LLC requires explicit consent
+              to process personal data, which must be provided clearly. When we
+              ask you to provide personal data, we will always inform you of the
+              purpose and use of the information. You can withdraw your consent
+              at any moment by contacting us.
+            </p>
           </div>
-          <br />
-          The basis for our collection and use of your data are as follows:
-          <br />
-          <span className="ml-4">
-            (1) Consent
-            <br />
-            We collect, store and process your personal information based on
-            your consent. In addition, Folinas LLC requires explicit consent to
-            process personal data, which must be provided clearly. When we ask
-            you to provide personal data, we will always inform you of the
-            purpose and use of the information. You can withdraw your consent at
-            any moment by contacting us.
-          </span>
-        </p>
+        </div>
       ),
     },
     {
@@ -100,7 +96,6 @@ const PrivacyPolicy: React.FC = () => {
           marketing or providing service to you, we may share your data with our
           subsidiaries, our mother companies, our business partners, our
           authorized contractors, our agents, our advisors, and our employees.
-          <br />
           We have no control over any act of any third party. The privacy
           protection stated in this Statement does not apply to the information
           disclosed to any third party incidental to or during our operation or
@@ -124,10 +119,8 @@ const PrivacyPolicy: React.FC = () => {
         <p className="mb-4">
           You are entitled to be informed by us whether we hold your data. You
           have the right to access, correct, delete or transfer the Personal
-          data that we hold.
-          <br />
-          Any such data request access has to be made in writing and sent to us
-          by mail to contact@folinas.com.
+          data that we hold. Any such data request access has to be made in
+          writing and sent to us by mail to contact@folinas.com.
         </p>
       ),
     },
@@ -150,7 +143,7 @@ const PrivacyPolicy: React.FC = () => {
         <p className="mb-4">
           If you have any questions regarding our Privacy Statement, how we
           protect your personal information, or if you have any complaints
-          regarding Folinas LLC's use of your data, you can contact Folinas LLC.
+          regarding Folinas LLC use of your data, you can contact Folinas LLC.
         </p>
       ),
     },
@@ -166,7 +159,7 @@ const PrivacyPolicy: React.FC = () => {
             heading="Thank you for visiting our Website."
           />
           <p>
-            Folinas LLC shall be referred to as “we”, “us”, or “our” in this
+            Folinas LLC shall be referred to as "we", "us", or "our" in this
             following Statement. This Statement highlights our privacy practices
             regarding the personal information that we collect and store about
             you through our website and also for the personal information that
@@ -177,6 +170,7 @@ const PrivacyPolicy: React.FC = () => {
           {dataPrivacyPolicy.map((item, index) => (
             <div key={index}>
               <Heading className="mb-5" headingTag="h3" heading={item.title} />
+              {/* Sử dụng HTML entities để escape dấu nháy đơn và dấu nháy kép */}
               <>{item.content}</>
             </div>
           ))}
