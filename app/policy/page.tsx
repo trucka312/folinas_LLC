@@ -53,7 +53,7 @@ const PrivacyPolicy: React.FC = () => {
             <li>For general market research;</li>
             <li>
               For registration or enrollment of events, and campaigns organized
-              by us or our partners ;
+              by us or our partners;
             </li>
             <li>To comply with regulations in applicable laws.</li>
           </ul>
@@ -170,8 +170,7 @@ const PrivacyPolicy: React.FC = () => {
           {dataPrivacyPolicy.map((item, index) => (
             <div key={index}>
               <Heading className="mb-5" headingTag="h3" heading={item.title} />
-              {/* Sử dụng HTML entities để escape dấu nháy đơn và dấu nháy kép */}
-              <>{item.content}</>
+              <div>{item.content}</div>
             </div>
           ))}
         </div>
