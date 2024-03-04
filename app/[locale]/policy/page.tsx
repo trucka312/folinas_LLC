@@ -150,7 +150,7 @@ const PrivacyPolicy: React.FC = () => {
         <p className="mb-4">
           If you have any questions regarding our Privacy Statement, how we
           protect your personal information, or if you have any complaints
-          regarding Folinas LLC's use of your data, you can contact Folinas LLC.
+          regarding Folinas LLC use of your data, you can contact Folinas LLC.
         </p>
       ),
     },

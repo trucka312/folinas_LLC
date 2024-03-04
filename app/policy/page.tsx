@@ -146,13 +146,7 @@ const PrivacyPolicy: React.FC = () => {
     },
     {
       title: "8.Contact",
-      content: (
-        <p className="mb-4">
-          If you have any questions regarding our Privacy Statement, how we
-          protect your personal information, or if you have any complaints
-          regarding Folinas LLC's use of your data, you can contact Folinas LLC.
-        </p>
-      ),
+      content: <p className="mb-4">hihi</p>,
     },
   ];
 
@@ -166,11 +160,11 @@ const PrivacyPolicy: React.FC = () => {
             heading="Thank you for visiting our Website."
           />
           <p>
-            Folinas LLC shall be referred to as “we”, “us”, or “our” in this
-            following Statement. This Statement highlights our privacy practices
-            regarding the personal information that we collect and store about
-            you through our website and also for the personal information that
-            you provide us while participating in our events and campaigns.
+            Folinas LLC shall be referred to as us in this following Statement.
+            This Statement highlights our privacy practices regarding the
+            personal information that we collect and store about you through our
+            website and also for the personal information that you provide us
+            while participating in our events and campaigns.
           </p>
         </div>
         <div className="my-6">
