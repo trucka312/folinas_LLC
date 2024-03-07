@@ -8,3 +8,4 @@ git checkout PhucTD
 git merge PhucTD 
 
 git pull origin master  
+git merge PhucTD
