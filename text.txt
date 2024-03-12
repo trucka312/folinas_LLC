@@ -4,7 +4,11 @@ git commit -m "PhucTD feature "
 git push
 
 git merge master 
-git checkout PhucTD
-git merge PhucTD 
+git git add .
+git commit -m "PhucTD merge master"
+git push 
 
-git pull origin master  
+git checkout master 
+git pull 
+git checkout PhucTD
+git pull origin master
