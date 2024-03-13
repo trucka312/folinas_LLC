@@ -1,6 +1,5 @@
 git add .
 git commit -m "PhucTD feature "
-
 git push
 
 git merge master 
@@ -12,3 +11,5 @@ git checkout master
 git pull 
 git checkout PhucTD
 git pull origin master
+
+npm run build
